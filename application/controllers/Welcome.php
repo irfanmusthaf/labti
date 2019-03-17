@@ -26,6 +26,29 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->view('include/header');
 		$this->load->view('index');
+		$this->load->view('include/footer');
+	}
+
+	public function tatatertib()
+	{
+		$this->load->view('include/header');
+		$this->load->view('tatatertib');
+		$this->load->view('include/footer');
+	}
+
+	public function jadwal()
+	{
+		$this->load->view('include/header');
+		$this->load->view('jadwal');
+		$this->load->view('include/footer');
+	}
+
+	public function profil()
+	{
+		$this->load->view('include/header');
+		$this->load->view('profil');
+		$this->load->view('include/footer');
 	}
 }
